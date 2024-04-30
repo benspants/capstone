@@ -217,6 +217,139 @@ input, label{
   font-weight: 600;
 }
 
+/* testimonials items*/
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #495e57;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.header-testimonials {
+  font-family: "Markazi Text", serif;
+  font-size: 60px;
+  font-weight: 700;
+  width: 100%;
+  color: #f4ce14;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.review {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  margin: 2em;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review p {
+  font-family: "Karla", sans-serif;
+}
+
+@media (max-width: 1050px) {
+  .review p {
+    margin: 1em;
+  }
+}
+
+#profile {
+  width: 30%;
+  border-radius: 50%;
+  margin: 1em;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#rating {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+.review h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin: 0.1em;
+}
+/* about items*/
+.about {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 3em 0;
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-wrap: wrap;
+  }
+}
+
+.content-about {
+  width: 40%;
+  margin-left: 7em;
+  margin-right: 5em;
+}
+
+@media (max-width: 800px) {
+  .content-about {
+    width: 100%;
+  }
+}
+
+.content-about p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #000;
+  margin-top: -1em;
+}
+
+@media (max-width: 1050px) {
+  .content-about p {
+    font-size: 16px;
+  }
+}
+
+.owners {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .owners {
+    width: 100%;
+    margin: 3em;
+  }
+}
+
+#chefsA {
+  width: 50%;
+  height: 60%;
+  margin-top: 1em;
+  margin-left: 10em;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#chefsB {
+  width: 40%;
+  height: 60%;
+  margin-top: -10em;
+  margin-left: 2em;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* footer items */
 footer section{
   padding: 10px 13%;
   display: flex;

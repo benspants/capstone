@@ -9,8 +9,8 @@ const About = () => {
                 <p></p>
             </div>
             <div className="owners">
-                <img id="chefs" src="" alt=""></img>
-                <img id="chefs" src="" alt=""></img>
+                <img id="chefsA" src="" alt=""></img>
+                <img id="chefsB" src="" alt=""></img>
             </div>
         </div>
     )
