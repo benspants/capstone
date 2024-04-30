@@ -17,7 +17,7 @@ const recipes = [
     },
     {
       id: 3,
-      title: "Lemon Dessert",
+      title: "Lemon Cake",
       price: 4.78,
       image: "https://i.ibb.co/sm6MfcH/desert.jpg",
       description:
