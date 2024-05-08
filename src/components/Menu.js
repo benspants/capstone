@@ -14,10 +14,12 @@ const Menu = () => {
                        <img src={recipe.image} alt=""/>
                         <div className="menu-content">
                             <div className="heading">
-                            <h5>{recipe.title}</h5>
-                            <p>{recipe.price}</p>
+                                <h5>{recipe.title}</h5>
+                                <p>{recipe.price}</p>
                             </div>
-                            <p>{recipe.description}</p>
+                            <div className="description">
+                                <p>{recipe.description}</p>
+                            </div>
                             <button className="orderBtn">Order Delivery</button>
                         </div>
                     </div>)

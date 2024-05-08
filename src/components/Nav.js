@@ -33,7 +33,7 @@ const Nav = () => {
                     <a href="/booking">Reservations</a>
                 </li>
                 <li>
-                    <a href="/">Order Online</a>
+                    <a href="/">Order</a>
                 </li>
                 <li>
                     <a href="/">Login</a>

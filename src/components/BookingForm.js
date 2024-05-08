@@ -41,10 +41,10 @@ const BookingForm = (props) => {
                 </div>
 
                 <div>
-                    <label htmlFor="book-occasion">Occasion</label>
+                    <label htmlFor="book-occasion">Occasion:</label>
                     <select id="book-occasion" key={occasion} value={occasion}
                     onChange={e => setOccasion(e.target.value)}>
-                        <option value="">Select an Option</option>
+                        <option value="">Select an Occasion</option>
                         <option>Birthday</option>
                         <option>Anniversary</option>
                         <option>Engagement</option>
@@ -53,7 +53,7 @@ const BookingForm = (props) => {
                 </div>
 
                 <div className="btnReceive">
-                    <input aria-label="On Click" type={"submit"} value={"Make your reservation"}></input>
+                    <input aria-label="On Click" type={"submit"} value={"Make Your Reservation"}></input>
                 </div>
             </fieldset>
         </form>
