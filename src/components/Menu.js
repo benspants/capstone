@@ -11,7 +11,7 @@ const Menu = () => {
             <div className="cards">
                 {
                     recipes.map(recipe => <div key={recipe.id}className="menu-items">
-                       <img src={recipe.image} alt=""/>
+                       <img className="recipeImages" src={recipe.image} alt=""/>
                         <div className="menu-content">
                             <div className="heading">
                                 <h5>{recipe.title}</h5>

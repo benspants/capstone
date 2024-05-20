@@ -1,11 +1,11 @@
 import React from "react";
-import smallLogo from "../images/smallLogo.png"
+import smallLogo from "../images/footer-logo.png"
 
 const Footer = () => {
    return(
    <footer>
     <section>
-        <div className="company-info">
+        <div className="company-logo">
             <img src={smallLogo} alt="Small Litle Lemon Logo"></img>
         </div>
         <div>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
         </div>
         <div>
-            <h3>Social Media</h3>
+            <h3>Socials</h3>
             <ul>
                 <li><a href="/">Instagram</a></li>
                 <li><a href="/">Facebook</a></li>

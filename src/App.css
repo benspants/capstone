@@ -14,7 +14,6 @@ nav{
   z-index: 10001;
 }
 
-
 .navbar {
   padding: 10px 13%;
   display: flex;
@@ -89,12 +88,14 @@ h2 {
   color: #F4CE14;
   font-family: "Markazi Text";
   font-size: 40pt;
+  margin: 0;
 }
 
 h3 {
   font-family: "Markazi Text";
-  font-size: 18pt;
+  font-size: 28pt;
   font-weight: bold;
+  margin: 0;
 }
 
 .banner p {
@@ -138,7 +139,6 @@ button {
   border-radius: 20px;
 }
 
-
 form, .confirm{
   padding: 10px 13%;
   background: #495E57;
@@ -154,7 +154,7 @@ input, label{
   margin-bottom: 20px;
   color: #EDEFEE;
   font-family: "Markazi Text";
-  font-size: 40pt, bold;
+  font-size: 20pt
 }
 
 #book-date, #book-time, #book-guests, #book-occasion{
@@ -165,24 +165,32 @@ input, label{
   outline: none;
   border-radius: 2px;
   font-family: "Karla";
+  font-size: 16pt;
 }
 
 .btnReceive input{
-  padding: 12px 16px;
-  border-radius: 12px;
-  margin-top: 20px;
-  background: #F4CE14;
+  background-color: #F4CE14;
   color: #333333;
+  padding: 14px 18px;
   border: none;
+  text-decoration: none;
+  border-radius: 12px;
   font-family: "Karla";
   font-size: 16pt;
+  margin: 0;
 
+  cursor: pointer;
+  &:hover{
+    background-color: #fbdabb;
+    color: #333333;}
 }
 
-.comfirm span{
-  color: blue;
+h1{
+  padding: 2rem;
+  text-align: center;
+  background-color: #495E57;
+  color:#EDEFEE
 }
-
 
 /* menu items */
 
@@ -200,9 +208,13 @@ input, label{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .cards{
-  display: flex;
+  display:-webkit-box;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -212,17 +224,27 @@ input, label{
 .menu-items{
   height: 600px;
   width: 350px;
-  background: #a9c8be;
+  background: #495E57;
   border-radius: 8px;
 }
 
-.menu-container img{
+/*.menu-container img{
   width: 100%;
   border-radius: 8px;
+}*/
+.recipeImages{
+  float: left;
+  height: 233.333px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+
 }
 
 .menu-content{
   padding: 5px 15px;
+  color: #EDEFEE;
+  height: 562px;
 }
 
 
@@ -234,14 +256,12 @@ input, label{
 
 .menu-content .description{
   font-size: 16pt;
+  height: 127.5px;
 }
-
-.orderbtn{
-  padding: 5px 12px;
-  margin-bottom: 20px;
-  font-family: "Markazi Text";
-  font-size: 18pt;
-  font-weight: 600;
+.orderBtn{
+  position: relative;
+  top: 20px;
+  left: 0px;
 }
 
 /* testimonials items*/
@@ -269,14 +289,17 @@ input, label{
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  padding-bottom: 3rem;
+
 }
 .review {
   width: 250px;
-  height: 250px;
+  /*height: 250px;*/
   background-color: #EDEFEE;
-  margin: 2em;
+  margin: .5rem;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: .5rem;
 }
 
 .review p {
@@ -302,6 +325,17 @@ input, label{
   display: block;
   margin: 10px auto;
 }
+.stars {
+  display: block;
+  margin: 10px 0;
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: #F4CE14;
+    }
+  }
+}
 
 .review h2 {
   font-family: "Markazi Text";
@@ -309,6 +343,7 @@ input, label{
   color: #333333;
   text-align: center;
   margin: 0.1em;
+  align-self: flex-start;
 }
 /* about items*/
 .about {
@@ -329,16 +364,11 @@ input, label{
   margin-left: 7em;
   margin-right: 5em;
   font-family: "Markazi Text";
-  font-size: 18pt bold;
+  font-size: 16pt;
   line-height: 1.7em;
   color: #333333;
   margin-top: -1em;
 }
-
-.content-about .paragraph-content{
-  font-family: "Karla";
-  font-size: 16pt;
-};
 
 @media (max-width: 800px) {
   .content-about {
@@ -384,39 +414,40 @@ footer section{
   align-items: start;
 }
 
-.company-info img{
-  margin-top: 12px;
-  cursor: pointer;
-  width: 200px;
+.company-logo{
+  width: 261.4px;
 }
 
-.company-info p{
-  width: 320px;
+.company-logo img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 55%;
 }
 
 footer h3{
   font-family: "Karla";
   font-size: 18pt;
+  font-weight: bold;
 }
 
 footer ul{
-  padding: 0;
+  padding: 5px;
 }
 
 footer ul li{
-  padding: 8px 0;
+  padding: 5px;
+  font-size: 16pt;
 }
 
-
+footer ul li a{
+  color: #EDEFEE;
+  text-decoration: none;
+}
 @media screen and (max-width: 768px){
   .menu-icon {
     display: block;
   }
-
-#smallLogo{
-  width: 50%;
-}
-
+  
   .nav-links {
     display: none;
   }
@@ -449,13 +480,14 @@ footer ul li{
     padding: 10px 8%;
   }
 
-
   .header section, .menu-container{
     padding: 10px 8%;
   }
+
   .menu-container{
     margin: 20px 0;
   }
+
   .menu-header{
     justify-content: flex-start;
   }
@@ -467,9 +499,6 @@ footer ul li{
   footer section{
     padding: 10px 8%;
     flex-direction: column;
-  }
-  .company-info p{
-    width: 100%;
   }
 }
 

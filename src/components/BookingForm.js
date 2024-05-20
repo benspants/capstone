@@ -8,7 +8,7 @@ const BookingForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.SubmitForm(e)
+        props.submitForm(e)
     }
     const handleChange = (e) =>{
         setDate(e);
@@ -30,7 +30,7 @@ const BookingForm = (props) => {
                 <select id="book-time">
                     <option value="">Select a time</option>
                     {props.availableTimes.availableTimes.map
-                        (availableTimes => {return <option key ={availableTimes} required>(availableTimes)</option>})
+                        (availableTimes => {return <option key ={availableTimes} required>{availableTimes}</option>})
                     }
                 </select>
                 </div>
